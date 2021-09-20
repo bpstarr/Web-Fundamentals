@@ -1,0 +1,30 @@
+* {
+    border: 1px red solid;
+}
+#container {
+    margin: 0 auto;
+    width: 1400px;
+}
+.box {
+    border-bottom: 5px solid black;
+    width: 600px;
+    display: flex;
+}
+p, button {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+h1 {
+    margin-left: 15%;
+    width: 600px;
+}
+.red {
+    background-color: red;
+}
+img {
+    width:50px; 
+    height: auto;
+}
+b {
+    color:green;
+}

@@ -1,0 +1,8 @@
+* {
+    border:2px solid red;
+}
+#container {
+    margin:0 auto;
+    width:200px;
+    display: block;;
+}

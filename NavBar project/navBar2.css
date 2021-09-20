@@ -1,0 +1,39 @@
+
+.nav {
+    background-color: rgb(104, 141, 250);
+    width: 1250px;
+    height: 125px;
+    display: flex;
+    vertical-align: center;
+    font-family: Montserrat, arial ,helvetica;
+    color:white;
+    margin: auto;
+    display: flex;
+    justify-content: left;
+}
+.nav img {
+    height:100px;
+    width:auto;
+    margin: auto;
+}
+.nav h1 {
+    font-size: 30px;
+    margin: auto;
+    width: 300px;
+}
+.nav li {
+    list-style: none;
+    text-decoration: none;
+    justify-content: flex-end;
+    display: flex;
+}
+a {
+    text-decoration: none;
+    color: white;
+    margin: auto;
+}
+.nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    width: 1000px;
+}

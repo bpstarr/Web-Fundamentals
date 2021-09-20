@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "jQueryFunctionsCss.css">
+    <title>My jQuery basic assignment!</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#btn1').click(function(){
+                $('#addClass').addClass('red')
+            });
+        });
+        $(document).ready(function(){
+            $('#btn2').click(function(){
+                $('#waynePic').slideToggle()
+            });
+        });
+        $(document).ready(function(){
+            $('#btn3').click(function(){
+                $('#newP').append("<br>New paragraph")
+            });
+        });
+        $(document).ready(function(){
+            $('#btn4').click(function(){
+                $('#hideP').hide()
+            });
+        });
+        $(document).ready(function(){
+            $('#btn5').click(function(){
+                $('#hideP').show()
+            });
+        });
+        $(document).ready(function(){
+            $('#btn6').click(function(){
+                $('#toggleP').toggle()
+            });
+        });
+        $(document).ready(function(){
+            $('#btn7').click(function(){
+                $('#waynePic1').slideUp()
+            });
+        });
+        $(document).ready(function(){
+            $('#btn8').click(function(){
+                $('#waynePic1').slideDown()
+            });
+        });
+        $(document).ready(function(){
+            $('#btn9').click(function(){
+                $('#waynePic2').fadeIn()
+            });
+        });
+        $(document).ready(function(){
+            $('#btn10').click(function(){
+                $('#waynePic2').fadeOut()
+            });
+        });
+        $(document).ready(function(){
+            $('#btn11').click(function(){
+                $('#waynePic3').before("<p>Wayne</p>");
+            });
+        });
+        $(document).ready(function(){
+            $('#btn12').click(function(){
+                $('#waynePic3').after("<p>Gretzky</p>")
+            });
+        });
+        $(document).ready(function(){
+            $('#btn13').click(function(){
+                $('#changeP').html("<p>New Paragraph Added</p>")
+            });
+        });
+        $(document).ready(function(){
+            $('#btn14').click(function(){
+                var text = $(this).text();
+                $("input").val(text);
+            });
+        });
+        $(document).ready(function(){
+            var str = $("#firstName1").first().text();
+            $("#firstName1").last().after(str);
+        });  
+    </script>
+</head>
+<body>
+    <div id = "container">
+        <h1>AddClass</h1>
+        <div class = "box">
+            <button id = "btn1">AddClass</button>
+            <p id = "addClass">Click the button to add class 'red' to this paragraph</p>
+        </div>
+        <h1>SlideToggle</h1>
+        <div class = "box">
+            <button id = "btn2">Slidetoggle</button>
+            <p>Click the button to slidetoggle a hidden image</p>
+            <img id ="waynePic" src="../Wayne.jpeg" alt="Wayne">
+        </div>
+        <h1>Append Paragraph</h1>
+        <div class = "box">
+            <button id = "btn3">Append</button>
+            <p id = "newP">Click the button to append a new paragraph</p>
+        </div>
+        <h1>Hide Paragraph and Show Paragraph</h1>
+        <div class = "box">
+            <button id = "btn4">Hide</button>
+            <button id = "btn5">Show</button>
+            <p id = "hideP">Click the button to hide a paragraph</p>
+        </div>
+        <h1>toggle Paragraph</h1>
+        <div class = "box">
+            <button id = "btn6">Toggle</button>
+            <p id = "toggleP">Click the button to toggle the paragraph</p>
+        </div>
+        <h1>SlideUp & SlideDown Picture</h1>
+        <div class = "box">
+            <button id = "btn7">SlideUp</button>
+            <button id = "btn8">SlideDown</button>
+            <p>Click the button to slideUp and slideDown the picture</p>
+            <img id ="waynePic1" src="../Wayne.jpeg" alt="Wayne">
+        </div>
+        <h1>FadeIn & FadeOut Picture</h1>
+        <div class = "box">
+            <button id = "btn9">Fade In</button>
+            <button id = "btn10">Fade Out</button>
+            <p>Click the button to fadeOut and fadeIn the picture</p>
+            <img id ="waynePic2" src="../Wayne.jpeg" alt="Wayne">
+        </div>
+        <h1>Before & after Picture</h1>
+        <div class = "box">
+            <button id = "btn11">Before</button>
+            <button id = "btn12">After</button>
+            <p id = "beforeAndAfter">Click the Before button to add his first name a pic before the pic 
+                and click the after button to add his last name after the pic
+            </p>
+            <img id ="waynePic3" src="../Wayne.jpeg" alt="Wayne">
+        </div>
+        <h1>Change the Paragraph with html</h1>
+        <div class = "box">
+            <button id = "btn13">html</button>
+            <p id = "changeP">Click the button to change the paragraph</p>
+        </div>
+        <h1>Enter the first name with val</h1>
+        <div class = "box">
+            <button id = "btn14">Wayne</button>
+            <input type = "text" value= "click a button">
+            <p id = "firstName">Enter Wayne Gretzky's first name in the textbox with a button click</p>
+        </div>
+        <h1>Add another Wayne with text</h1>
+        <div class = "box">
+            <p id = "firstName1"><b>Paragraph not green when repeated with text</b></p>
+        </div>
+    </div>  
+</body>
+</html>
